@@ -3,8 +3,15 @@
  */
 public class Main {
 
-    parking test = new parking();
-            test.entra();
+    public static void main(String[] args) {
+
+        parking pk = new parking();
+
+        int coches = 15;
+        pk.entra(coches);
+
+    }
+
 
 
 }

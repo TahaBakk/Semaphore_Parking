@@ -5,13 +5,11 @@ import java.util.concurrent.Semaphore;
  */
 public class parking {
 
-    private static final int numSemaphore = 10;
-    private final Semaphore plaza = new Semaphore(numSemaphore, true);
-
-    public void entra() {
-        for (int i = 0; i < 15; i++) {
+    public void entra(int coches) {
+        for (int i = 0; i < coches; i++) {
             Coche pk = new Coche();
             pk.start();
         }
 
+    }
 }
